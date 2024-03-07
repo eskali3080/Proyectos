@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+// Verificar si el usuario ha iniciado sesión
+if (!isset($_SESSION['usuario'])) {
+    // El usuario no ha iniciado sesión, redirigir a la página de inicio de sesión
+    header("Location: iniciarSe.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

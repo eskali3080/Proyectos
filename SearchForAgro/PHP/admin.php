@@ -2,7 +2,6 @@
 
 $conexion = new mysqli("localhost:3307", "root", "", "search_with_agro");
 
-
 if ($conexion->connect_error) {
     die("Error de conexión a la base de datos: " . $conexion->connect_error);
 }
@@ -10,33 +9,29 @@ if ($conexion->connect_error) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $usuario = $_POST["usuario"];
-    $numero = $_POST["numero"];
     $cedula = $_POST["cedula"];
 
  
-    $stmt = $conexion->prepare("INSERT INTO usuarios (usuario, numero, cedula) VALUES (?, ?, ?)");
+    $stmt = $conexion->prepare("SELECT id FROM admins WHERE usuario = ? AND cedula = ?");
+    $stmt->bind_param("ss", $usuario, $cedula);
+    $stmt->execute();
+    $stmt->store_result();
 
- 
-    if (!$stmt) {
-        die("Error en la preparación de la consulta: " . $conexion->error);
-    }
-
-    $stmt->bind_param("sss", $usuario, $numero, $cedula);
-
-    if ($stmt->execute()) {
-        echo "Usuario registrado correctamente.";
-    } else {
-        echo "Error al registrar el usuario: " . $stmt->error;
-    }
+if ($stmt->num_rows > 0) {
+   
+    session_start();
+    $_SESSION['usuario'] = $usuario;
+    header("Location: crud.php");
+    exit();
+} else {
+    echo "NO SOS ADMIN";
+}
 
     $stmt->close();
 }
 
 $conexion->close();
 ?>
-
-
-
 
 
 <!DOCTYPE html>
@@ -969,39 +964,21 @@ $conexion->close();
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS" aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarS">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a href="index.php" class="nav-link">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a href="crearCuen.php" class="nav-link">Registrarse</a>
-          </li>
-
-        </ul>
-      </div>
     </div>
   </nav>
 </header>
 
 <body>
   <div class="h-auto form-container">
-    <p class="title">Registrate</p>
-
+    <p class="title">Bienvenido Administrador</p>
     <form class="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 
-      <p>usuario</p>
       <input type="text" class="input"  name="usuario" required>
-      <p>numero</p>
-      <input type="password" class="input"  name="numero" required>
-      <p>Contraseña</p>
       <input type="password" class="input"  name="cedula" required>
-
-      <input class="text-decoration-none ini text-center form-btn" type="submit" value="Registrarse">
-
+      <input class="text-decoration-none ini text-center form-btn" type="submit" value="Iniciar Sesión">
 
     </form>
+  </div>
 
   <footer>
     <div class="footer__p">

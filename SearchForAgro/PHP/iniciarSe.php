@@ -1,6 +1,38 @@
 <?php
+$conexion = new mysqli("localhost:3307", "root", "", "search_with_agro");
 
+if ($conexion->connect_error) {
+    die("Error de conexión a la base de datos: " . $conexion->connect_error);
+}
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $usuario = $_POST["usuario"];
+    $cedula = $_POST["cedula"];
+
+
+    $stmt = $conexion->prepare("SELECT id FROM usuarios WHERE usuario = ? AND cedula = ?");
+    $stmt->bind_param("ss", $usuario, $cedula);
+    $stmt->execute();
+    $stmt->store_result();
+
+
+if ($stmt->num_rows > 0) {
+
+    session_start();
+    $_SESSION['usuario'] = $usuario;
+    header("Location: index2.php");
+    exit();
+} else {
+    echo "Usuario o contraseña incorrecta.";
+}
+
+    $stmt->close();
+}
+
+$conexion->close();
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -951,17 +983,19 @@
 <body>
   <div class="h-auto form-container">
     <p class="title">Bienvenido</p>
-    <form class="form">
-      <input type="email" class="input" placeholder="Email">
-      <input type="password" class="input" placeholder="Contraseña">
+    <form class="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+
+      <input type="text" class="input"  name="usuario" required>
+      <input type="password" class="input"  name="cedula" required>
+
       <p class="page-link">
         <span class="page-link-label">Olvide la contraseña</span>
       </p>
-      
-      <a class="text-decoration-none ini text-center form-btn" href="index2.php">Iniciar sesion</a>
-        
-      
+ 
+      <input class="text-decoration-none ini text-center form-btn" type="submit" value="Iniciar Sesión">
     </form>
+
+
     <p class="mt-5 sign-up-label">
         ¿No tienes una cuenta? <a href="crearCuen.php">Registrarse</a>
       </p>
