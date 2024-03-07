@@ -18,36 +18,69 @@ if (!isset($_SESSION['usuario'])) {
         <title>Progreso</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="CSS/style.css">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link rel="stylesheet"href="CSS/styles.css">
         <link rel="stylesheet" href="CSS/stylo.css">
+        <style>
+            .mt-5{
+                margin-top: 150px !important;
+
+            }
+        </style>
+
+
 
     </head>
-    <style>
-        body{
-            background-image: url(CSS/IMG/fertilizacion-de-fondo.jpg);
-        }
-    </style>
-    <body>
+
+    <body class="d-flex aling-items-center">
         <!-- Responsive navbar-->
        
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container px-lg-5">
-    <a href="#" class="navbar-brand"><span class="text-primary">Search</span> with Agro</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="cultivos.php">Cultivos</a></li>
-                <li class="nav-item"><a class="nav-link" href="iniciarSe.php">Iniciar Sesion</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Nosotros</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">   
+       
+        
+        
+
+        <a href="#" class="navbar-brand"
+          ><span class="text-primary">Search</span> For Agro</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarS"
+          aria-controls="navbarS"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarS">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="index.php" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="progreso.php" class="nav-link">Progreso</a>
+              </li>
+            <li class="nav-item">
+              <a href="cultivos.php" class="nav-link">Cultivos</a>
+            </li>
+            <li class="nav-item">
+              <a href="iniciarSe.php" class="nav-link">cerrar session</a>
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
+
 
     
-    <div class="cont">
+    <div class="cont mt-5 ">
         <h1>Registro de Cultivos</h1>
         <form id="cultivoForm">
             <label for="cultivo">Tipo de Cultivo:</label>
@@ -58,7 +91,7 @@ if (!isset($_SESSION['usuario'])) {
             <input type="date" id="fecha-cosecha" name="fecha-cosecha">
             <label for="rendimiento">Rendimiento:</label>
             <input type="text" id="rendimiento" name="rendimiento">
-            <button type="submit">Agregar Cultivo</button>
+            <button  type="submit">Agregar Cultivo</button>
         </form>
 
         <h2>Historial de Cultivos</h2>
@@ -75,10 +108,11 @@ if (!isset($_SESSION['usuario'])) {
         <div id="statistics" class="statistics">
             <!-- Aquí se mostrarían dinámicamente las estadísticas -->
         </div>
+        
     </div>
-    <footer class="py-5 bg-dark">
-        <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Search for Agro 2024</p></div>
-    </footer>
+    
+    
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->

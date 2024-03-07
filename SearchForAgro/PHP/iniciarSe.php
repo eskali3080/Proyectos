@@ -1,5 +1,5 @@
 <?php
-$conexion = new mysqli("localhost:3307", "root", "", "search_with_agro");
+$conexion = new mysqli("localhost:3308", "root", "", "search_with_agro");
 
 if ($conexion->connect_error) {
     die("Error de conexión a la base de datos: " . $conexion->connect_error);

@@ -493,7 +493,7 @@ color: white;
 }
 
 .d-block{
-  filter: blur(8px);
+  filter: blur(5000px);
   margin-top: 50px;
 }
 
@@ -503,4 +503,6 @@ color: white;
   margin-top: 50px;
  
 }
+
+
 
