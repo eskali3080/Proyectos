@@ -52,14 +52,18 @@
             <a href="index.php" class="nav-link">Inicio</a>
           </li>
           <li class="nav-item">
-            <a href="historial.php" class="nav-link">Progreso</a>
+            <a href="cultivos.php" class="nav-link">Progreso</a>
           </li>
           <li class="nav-item">
             <a href="cultivos.php" class="nav-link">Cultivos</a>
+          </li>          
+          <li class="nav-item">
+            <a href="nosotros.php" class="nav-link">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a href="index.php" class="nav-link">Cerrar sesión</a>
+            <a href="crearCuen.php" class="nav-link">Cerrar sesión</a>
           </li>
+
         </ul>
       </div>
     </div>
@@ -82,7 +86,7 @@
           <p>
             Antes de sembrar, dedica tiempo a planificar qué cultivos serán más beneficiosos para tu terreno y tu región. La rotación de cultivos es esencial para mantener la fertilidad del suelo y prevenir la acumulación de plagas y enfermedades específicas. Investiga los ciclos de crecimiento de diferentes plantas y diseña un plan de rotación que te permita aprovechar al máximo los nutrientes del suelo mientras minimizas los riesgos de problemas de salud de las plantas.
           </p>
-          <a href="#" class="btn btn-primary mt-3">Más Información</a>
+          <a href="cultivos.php" class="btn btn-primary mt-3">Más Información</a>
         </div>
 
       </div>
@@ -93,7 +97,7 @@
           <p>
             En lugar de depender únicamente de pesticidas químicos, considera adoptar un enfoque más holístico para controlar las plagas y enfermedades en tu cultivo. Esto implica una combinación de métodos, como la introducción de enemigos naturales de las plagas, el uso de trampas, la aplicación de técnicas de cultivo que fortalezcan la resistencia de las plantas y la práctica de una buena higiene agrícola. Este enfoque no solo es más sostenible a largo plazo, sino que también puede ser más económico y respetuoso con el medio ambiente.
           </p>
-          <a href="#" class="btn btn-primary mt-3">Más Información</a>
+          <a href="cultivos.php" class="btn btn-primary mt-3">Más Información</a>
         </div>
       </div>
 
@@ -104,7 +108,7 @@
           <p>
             El agua y el suelo son recursos fundamentales en la agricultura, por lo que es crucial utilizarlos de manera eficiente y sostenible. Implementa prácticas de conservación del suelo, como la siembra directa, el uso de cubiertas vegetales y la construcción de terrazas para reducir la erosión y mejorar la estructura del suelo. Además, considera sistemas de riego eficientes, como el riego por goteo, que minimizan el desperdicio de agua y garantizan que tus cultivos reciban la cantidad adecuada de agua en el momento adecuado.
           </p>
-          <a href="#" class="btn btn-primary mt-3">Más Información</a>
+          <a href="cultivos.php" class="btn btn-primary mt-3">Más Información</a>
         </div>
       </div>
     </div>
@@ -140,7 +144,7 @@
               <p>
 
                 La calidad de los productos agrícolas es esencial para la satisfacción del consumidor y su salud. El cultivo adecuado influye en aspectos como el sabor, la textura, el valor nutricional y la seguridad alimentaria de los alimentos. Por ejemplo, la cosecha en el momento óptimo de madurez y el manejo adecuado durante la postcosecha pueden realzar el sabor y la frescura de los productos, mientras que el uso responsable de fertilizantes y prácticas orgánicas puede aumentar su valor nutricional </p>
-              <a href="#" class="btn btn-primary">Mas informacion</a>
+              <a href="cultivos.php" class="btn btn-primary">Mas informacion</a>
             </div>
           </div>
         </div>
@@ -196,7 +200,9 @@
                 conocimientos y consejos necesarios para optimizar el rendimiento de sus cultivos, enfrentar desafíos climáticos y promover prácticas sostenibles.
               </p>
               <button class="btn bg-primary text-white">
-                Mas informacion
+                <a href="nosotros.php" class="text-white text-decoration-none">Sobre Nosotros</a>
+
+
               </button>
             </div>
           </div>
@@ -210,7 +216,7 @@
                 Con nosotros podrás agregar tus cultivos y ver un aproximado de cuando estarán listos para cosechar (el tiempo puede variar), recuerda que para acceder a esta sección tendrás que haberte registrado o iniciado sección con tu cuenta para guardar tus avances.
               </p>
               <button class="btn bg-primary text-white">
-                <a href="contacto.html" class="text-white text-decoration-none">Mas informacion</a>
+                <a href="historial.php" class="text-white text-decoration-none">Mi Progreso</a>
 
 
               </button>
@@ -246,7 +252,9 @@
                 Los tomates prefieren suelos bien drenados y fértiles con un pH entre 6.0 y 6.8. Necesitan pleno sol y temperaturas cálidas para crecer adecuadamente.
               </p>
               <button class="btn bg-primary text-white">
-                Mas informacion
+                <a href="cultivos.php" class="text-white text-decoration-none">Mas informacion</a>
+
+
               </button>
             </div>
           </div>
@@ -260,8 +268,10 @@
               <h3>Papa</h3>
               <p class="lead">
                 La cosecha de las papas generalmente ocurre de 90 a 120 días después de la siembra, dependiendo de la variedad y las condiciones de crecimiento. </p>
-              <button class="btn bg-primary text-white">
-                Mas informacion
+                <button class="btn bg-primary text-white">
+                <a href="cultivos.php" class="text-white text-decoration-none">Mas informacion</a>
+
+
               </button>
             </div>
           </div>
@@ -275,8 +285,10 @@
               <h3>Arroz</h3>
               <p class="lead">
                 El arroz se cultiva en campos inundados o en suelos saturados de agua. Se siembra en primavera en áreas más frías y en verano en áreas más cálidas. </p>
-              <button class="btn bg-primary text-white">
-                Mas informacion
+                <button class="btn bg-primary text-white">
+                <a href="cultivos.php" class="text-white text-decoration-none">Mas informacion</a>
+
+
               </button>
             </div>
           </div>
@@ -311,7 +323,9 @@
 
               </p>
               <button class="btn bg-primary text-white">
-                Mas informacion
+                <a href="cultivos.php" class="text-white text-decoration-none">Mas informacion</a>
+
+
               </button>
             </div>
           </div>
@@ -325,8 +339,10 @@
               <h3>Enfermedades fúngicas</h3>
               <p class="lead">
                 Los hongos patógenos pueden infectar los cultivos y causar enfermedades como mildiú polvoriento, oídio, roya, tizón tardío y manchas foliares. Estas enfermedades pueden provocar marchitez, pudrición, manchas en las hojas y frutos </p>
-              <button class="btn bg-primary text-white">
-                Mas informacion
+                <button class="btn bg-primary text-white">
+                <a href="cultivos.php" class="text-white text-decoration-none">Mas informacion</a>
+
+
               </button>
             </div>
           </div>
@@ -342,7 +358,9 @@
                 Las plantas no deseadas que compiten por nutrientes, agua y luz solar con los cultivos se conocen como malezas. Pueden reducir los rendimientos de los cultivos y dificultar las labores de manejo y cosecha.
               </p>
               <button class="btn bg-primary text-white">
-                Mas informacion
+                <a href="cultivos.php" class="text-white text-decoration-none">Mas informacion</a>
+
+
               </button>
             </div>
           </div>
