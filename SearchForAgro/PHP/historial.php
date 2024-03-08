@@ -17,7 +17,7 @@ if (!isset($_SESSION['usuario'])) {
         <meta name="author" content="" />
         <title>Progreso</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/png" href="CSS/IMG/favi.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="CSS/style.css">
@@ -28,6 +28,9 @@ if (!isset($_SESSION['usuario'])) {
             .mt-5{
                 margin-top: 150px !important;
 
+            }
+            body{
+              background-image: url(CSS/IMG/fertilizacion-de-fondo.jpg);
             }
         </style>
 
@@ -65,13 +68,13 @@ if (!isset($_SESSION['usuario'])) {
               <a href="index.php" class="nav-link">Inicio</a>
             </li>
             <li class="nav-item">
-                <a href="progreso.php" class="nav-link">Progreso</a>
+                <a href="historial.php" class="nav-link">Progreso</a>
               </li>
             <li class="nav-item">
               <a href="cultivos.php" class="nav-link">Cultivos</a>
             </li>
             <li class="nav-item">
-              <a href="iniciarSe.php" class="nav-link">cerrar session</a>
+              <a href="index.php" class="nav-link">cerrar session</a>
             </li>
           </ul>
         </div>

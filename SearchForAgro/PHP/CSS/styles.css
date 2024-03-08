@@ -8177,15 +8177,7 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-light {
- 
- background-image: url(https://cdn.pixabay.com/photo/2020/10/01/11/07/hands-5618240_1280.jpg);
- 
- color: white;
-  border-radius: 20px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 
 .bg-dark {
   --bs-bg-opacity: 1;

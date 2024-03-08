@@ -1,114 +1,214 @@
-<?php 
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Cultivos</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container px-lg-5">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Cultivos</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/png" href="CSS/IMG/favi.png">
+    <style>
+        .bg-light {
+
+            background-image: url(CSS/IMG/cultivos-header.jpg);
+
+            color: white;
+            border-radius: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center 30%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+
+
+
+
             <a href="#" class="navbar-brand"><span class="text-primary">Search</span> For Agro</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cultivos.php">Cultivos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="iniciarSe.php">Iniciar Sesion</a></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS" aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarS">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.php" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="historial.php" class="nav-link">Progreso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cultivos.php" class="nav-link">Cultivos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="iniciarSe.php" class="nav-link">iniciar session</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page header with logo and tagline-->
+    <header class="mike py-5 bg-light border-bottom mb-4">
+        <div class="container">
+            <div class="text-center my-5">
+                <h1 class="fw-bolder text-white">Cultivos</h1>
+                <p class="lead mb-0">Aqui podras ver todos los cultivos que tenemos para ti</p>
+            </div>
+        </div>
+    </header>
+    <!-- Page content-->
+    <div class="container">
+        <div class="row">
+            <!-- Blog entries-->
+            <div class="col-lg-8">
+                <!-- Featured blog post-->
+                <div class="card mb-4">
+                    <a href="#!"><img class="card-img-top" src="CSS/IMG/plant-4036130_1280.jpg" alt="..." /></a>
+                    <div class="card-body">
+                        <div class="small text-muted">Publicado el 1 de marzo del 2024, por Search with Agro</div>
+                        <h2 class="card-title">¡Únete a la innovación agrícola con Search with Agro!</h2>
+                        <p class="card-text">Nos complace invitarte a unirse a nosotros en un emocionante viaje hacia el futuro de la agricultura. En Search with Agro, estamos comprometidos con la búsqueda constante de soluciones innovadoras para mejorar la productividad y la sostenibilidad en el sector agrícola.</p>
+
+                    </div>
+                </div>
+                <!-- Nested row for non-featured blog posts-->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- Blog post-->
+                        <div class="card mb-4">
+                            <a href="#!"><img class="card-img-top" src="CSS/IMG/cebolla.jpg" alt="..." /></a>
+                            <div class="card-body">
+                                <div class="small text-muted">1 de marzo, 2024</div>
+                                <h2 class="card-title h4">Cebolla</h2>
+                                <p class="card-text">
+                                    Cúcuta, ubicada en el departamento de Norte de Santander en Colombia, posee una diversidad de cultivos debido a su clima variado y suelo fértil. La agricultura es una parte fundamental de la economía local, y los cultivos más destacados incluyen:</p>
+                                <a class="btn btn-primary" href="#!">Leer más→</a>
+                            </div>
+                        </div>
+                        <!-- Blog post-->
+                        <div class="card mb-4">
+                            <a href="#!"><img class="card-img-top" src="CSS/IMG/patatoe.jpg" alt="..." /></a>
+                            <div class="card-body">
+                                <div class="small text-muted">1 de marzo, 2024</div>
+                                <h2 class="card-title h4">Papa</h2>
+                                <p class="card-text">
+                                    Cúcuta, ubicada en el departamento de Norte de Santander en Colombia, posee una diversidad de cultivos debido a su clima variado y suelo fértil. La agricultura es una parte fundamental de la economía local, y los cultivos más destacados incluyen:</p>
+                                <a class="btn btn-primary" href="#!">Leer más→</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Blog post-->
+                        <div class="card mb-4">
+                            <a href="#!"><img class="card-img-top" src="CSS/IMG/arroz-cultivos.jpg" alt="..." /></a>
+                            <div class="card-body">
+                                <div class="small text-muted">1 de marzo, 2024</div>
+                                <h2 class="card-title h4">Arroz</h2>
+                                <p class="card-text">
+                                    Cúcuta, ubicada en el departamento de Norte de Santander en Colombia, posee una diversidad de cultivos debido a su clima variado y suelo fértil. La agricultura es una parte fundamental de la economía local, y los cultivos más destacados incluyen:</p>
+                                <a class="btn btn-primary" href="#!">Leer más→</a>
+                            </div>
+                        </div>
+                        <!-- Blog post-->
+                        <div class="card mb-4">
+                            <a href="#!"><img class="card-img-top" src="CSS/IMG/platano.jpg" alt="..." /></a>
+                            <div class="card-body">
+                                <div class="small text-muted">1 de marzo, 2024</div>
+                                <h2 class="card-title h4">Platano</h2>
+                                <p class="card-text">
+                                    Cúcuta, ubicada en el departamento de Norte de Santander en Colombia, posee una diversidad de cultivos debido a su clima variado y suelo fértil. La agricultura es una parte fundamental de la economía local, y los cultivos más destacados incluyen:</p>
+                                <a class="btn btn-primary" href="#!">Leer más→</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination-->
+                <nav aria-label="Pagination">
+                    <hr class="my-0" />
+                    <ul class="pagination justify-content-center my-4">
+                        <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Newer</a></li>
+                        <li class="page-item active" aria-current="page"><a class="page-link" href="#!">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                        <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">15</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">Anterior</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
-        </nav>
-        <!-- Header-->
-        <header class="py-5">
-            <div class="container px-lg-5">
-                <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
-                    <div class="m-4 m-lg-5">
-                        <h1 class="display-5 fw-bold">A warm welcome!</h1>
-                        <p class="fs-4">Bootstrap utility classes are used to create this jumbotron since the old component has been removed from the framework. Why create custom CSS when you can use utilities?</p>
-                        <a class="btn btn-primary btn-lg" href="#!">Call to action</a>
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+                <!-- Search widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Buscar</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Introduzca el término de búsqueda..." aria-label="Enter search term..." aria-describedby="button-search" />
+                            <button class="btn btn-primary" id="button-search" type="button">Ir</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </header>
-        <!-- Page Content-->
-        <section class="pt-4">
-            <div class="container px-lg-5">
-                <!-- Page Features-->
-                <div class="row gx-lg-5">
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-collection"></i></div>
-                                <h2 class="fs-4 fw-bold">Fresh new layout</h2>
-                                <p class="mb-0">With Bootstrap 5, we've created a fresh new layout for this template!</p>
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Categories</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">Papa</a></li>
+                                    <li><a href="#!">Yuca</a></li>
+                                    <li><a href="#!">Palma de Aceite</a></li>
+                                    <li><a href="#!">Caña</a></li>
+                                    <li><a href="#!">Panelera</a></li>
+                                    <li><a href="#!">Arroz Riego</a></li>
+                                </ul>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-cloud-download"></i></div>
-                                <h2 class="fs-4 fw-bold">Free to download</h2>
-                                <p class="mb-0">As always, Start Bootstrap has a powerful collectin of free templates.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-card-heading"></i></div>
-                                <h2 class="fs-4 fw-bold">Jumbotron hero header</h2>
-                                <p class="mb-0">The heroic part of this template is the jumbotron hero header!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-bootstrap"></i></div>
-                                <h2 class="fs-4 fw-bold">Feature boxes</h2>
-                                <p class="mb-0">We've created some custom feature boxes using Bootstrap icons!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-code"></i></div>
-                                <h2 class="fs-4 fw-bold">Simple clean code</h2>
-                                <p class="mb-0">We keep our dependencies up to date and squash bugs as they come!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
-                                <h2 class="fs-4 fw-bold">A name you trust</h2>
-                                <p class="mb-0">Start Bootstrap has been the leader in free Bootstrap templates since 2013!</p>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">Plátano</a></li>
+                                    <li><a href="#!">Tomate</a></li>
+                                    <li><a href="#!">Cebolla de Bulbo</a></li>
+                                    <li><a href="#!">Café </a></li>
+                                    <li><a href="#!">Arracacha</a></li>
+
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Side widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Recuerda</div>
+                    <div class="card-body">"Con cada semilla que siembras, estás sembrando la esperanza de un futuro más verde y próspero. Sigue cultivando con amor y dedicación, porque cada cosecha es un paso hacia la abundancia y la renovación." 🌱💚</div>
+                </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <div class="container px-4 px-lg-5">
+                <p class="m-0 text-center text-white">&copy; Search for Agro 2024</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>

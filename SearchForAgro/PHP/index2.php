@@ -11,60 +11,59 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" type="image/png" href="CSS/IMG/favi.png">
   <style>
-    .d-block{
+    .d-block {
       filter: blur(0);
       margin-top: 0;
     }
-    .text-white{
-  font-weight: bold;
-  }
 
+    .text-white {
+      font-weight: bold;
+    }
 
+    p {
+      text-align: justify;
+
+    }
+
+    .carousel-caption {
+      backdrop-filter: blur(5px);
+    }
   </style>
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">   
-       
-        
-        
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
 
-        <a href="#" class="navbar-brand"
-          ><span class="text-primary">Search</span> For Agro</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarS"
-          aria-controls="navbarS"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarS">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a href="index2.php" class="nav-link">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a href="progreso.php" class="nav-link">Progreso</a>
-              </li>
-            <li class="nav-item">
-              <a href="cultivos.php" class="nav-link">Cultivos</a>
-            </li>
-            <li class="nav-item">
-              <a href="index.php" class="nav-link">Cerrar session</a>
-            </li>
-          </ul>
-        </div>
+
+
+      <a href="#" class="navbar-brand"><span class="text-primary">Search</span> For Agro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS" aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarS">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="index.php" class="nav-link">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="historial.php" class="nav-link">Progreso</a>
+          </li>
+          <li class="nav-item">
+            <a href="cultivos.php" class="nav-link">Cultivos</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.php" class="nav-link">Cerrar session</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
 
   <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
@@ -73,102 +72,74 @@
       <button type="button" data-bs-target="#carouselE" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselE" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"></button>
     </div>
-    
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="CSS/IMG/cafe-grano.jpg" class="d-block w-100" alt="" />
-          
-          <div class="carousel-caption mb-5">
-            <h1 class="text-white">Cuidado del cultivo</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non
-              aliquam ante. Donec fermentum scelerisque pulvinar. Integer
-              tincidunt dui ut risus porttitor mollis. Proin tristique elit ut
-              nulla consequat faucibus. Fusce non risus erat. Nullam et eleifend
-              metus. Aliquam erat volutpat. Integer efficitur elementum ligula
-              id commodo. Ut et ipsum laoreet, laoreet quam quis, sodales
-            </p>
-            <a href="#" class="btn btn-primary mt-3">Más Información</a>
-          </div>
-        
-        </div>
-        <div class="carousel-item">
-          <img src="CSS/IMG/zanahoria-carrusel.jpg" class="d-block w-100" alt="" />
-          <div class="carousel-caption mb-5">
-            <h1 class="text-white">Cuidado del cultivo</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non
-              aliquam ante. Donec fermentum scelerisque pulvinar. Integer
-              tincidunt dui ut risus porttitor mollis. Proin tristique elit ut
-              nulla consequat faucibus. Fusce non risus erat. Nullam et eleifend
-              metus. Aliquam erat volutpat. Integer efficitur elementum ligula
-              id commodo. Ut et ipsum laoreet, laoreet quam quis, sodales nunc.
-            </p>
-            <a href="#" class="btn btn-primary mt-3">Más Información</a>
-          </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="CSS/IMG/cafe-grano.jpg" class="d-block w-100" alt="" />
+
+        <div class="carousel-caption mb-5">
+          <h1 class="text-white">Planificación de cultivos y rotación</h1>
+          <p>
+            Antes de sembrar, dedica tiempo a planificar qué cultivos serán más beneficiosos para tu terreno y tu región. La rotación de cultivos es esencial para mantener la fertilidad del suelo y prevenir la acumulación de plagas y enfermedades específicas. Investiga los ciclos de crecimiento de diferentes plantas y diseña un plan de rotación que te permita aprovechar al máximo los nutrientes del suelo mientras minimizas los riesgos de problemas de salud de las plantas.
+          </p>
+          <a href="#" class="btn btn-primary mt-3">Más Información</a>
         </div>
 
-        <div class="carousel-item">
-          <img src="CSS/IMG/arroz-carrusel.jpg" class="d-block w-100" alt="" />
-          <div class="carousel-caption mb-5">
-            <h1 class="text-white">Cuidado del cultivo</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non
-              aliquam ante. Donec fermentum scelerisque pulvinar. Integer
-              tincidunt dui ut risus porttitor mollis. Proin tristique elit ut
-              nulla consequat faucibus. Fusce non risus erat. Nullam et eleifend
-              metus. Aliquam erat volutpat. Integer efficitur elementum ligula
-              id commodo. Ut et ipsum laoreet, laoreet quam quis, sodales nunc.
-            </p>
-            <a href="#" class="btn btn-primary mt-3">Más Información</a>
-          </div>
+      </div>
+      <div class="carousel-item">
+        <img src="CSS/IMG/zanahoria-carrusel.jpg" class="d-block w-100" alt="" />
+        <div class="carousel-caption mb-5">
+          <h1 class="text-white">Manejo integrado de plagas y enfermedades</h1>
+          <p>
+            En lugar de depender únicamente de pesticidas químicos, considera adoptar un enfoque más holístico para controlar las plagas y enfermedades en tu cultivo. Esto implica una combinación de métodos, como la introducción de enemigos naturales de las plagas, el uso de trampas, la aplicación de técnicas de cultivo que fortalezcan la resistencia de las plantas y la práctica de una buena higiene agrícola. Este enfoque no solo es más sostenible a largo plazo, sino que también puede ser más económico y respetuoso con el medio ambiente.
+          </p>
+          <a href="#" class="btn btn-primary mt-3">Más Información</a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="CSS/IMG/arroz-carrusel.jpg" class="d-block w-100" alt="" />
+        <div class="carousel-caption mb-5">
+          <h1 class="text-white">Gestión del agua y conservación del suelo</h1>
+          <p>
+            El agua y el suelo son recursos fundamentales en la agricultura, por lo que es crucial utilizarlos de manera eficiente y sostenible. Implementa prácticas de conservación del suelo, como la siembra directa, el uso de cubiertas vegetales y la construcción de terrazas para reducir la erosión y mejorar la estructura del suelo. Además, considera sistemas de riego eficientes, como el riego por goteo, que minimizan el desperdicio de agua y garantizan que tus cultivos reciban la cantidad adecuada de agua en el momento adecuado.
+          </p>
+          <a href="#" class="btn btn-primary mt-3">Más Información</a>
         </div>
       </div>
     </div>
+  </div>
 
 
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselE" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
-      <span class="visually-hidden">hola</span>
-    </button>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselE" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+    <span class="visually-hidden">hola</span>
+  </button>
 
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselE" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"> </span>
-      <span class="visually-hidden">hola</span>
-    </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselE" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"> </span>
+    <span class="visually-hidden">hola</span>
+  </button>
   </div>
 
   <div class="fondow bg-light">
     <section class="about section-padding">
 
-      <div class="container">
+      <div class="container conteiner-flex">
         <div class="row">
           <div class="col-lg-4 col-md-12 col-12">
             <div class="about-img">
-              <img src="CSS/IMG/arroz.jpg" class="img-fluid" alt="" />
+              <img src="CSS/IMG/cultivo.jpg" class="img-fluid" alt="" />
             </div>
           </div>
 
           <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md5">
             <div class="about-text">
-              <h2>TENGO <br />HAMBREEEEEEEE</h2>
+              <h2>Calidad de los productos</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                non aliquam ante. Donec fermentum scelerisque pulvinar.
-                Integer tincidunt dui ut risus porttitor mollis. Proin
-                tristique elit ut nulla consequat faucibus. Fusce non risus
-                erat. Nullam et eleifend metus. Aliquam erat volutpat. Integer
-                efficitur elementum ligula id commodo. Ut et ipsum laoreet,
-                laoreet quam quis, sodales nunc. Proin pharetra, nulla ac
-                mollis eleifend, mauris nunc maximus enim, vel interdum dolor
-                felis rhoncus lectus. Pellentesque mattis mi magna, a
-                convallis ex placerat id. Nulla luctus lorem non augue laoreet
-                tincidunt. Cras eget mollis turpis, sit amet egestas dui. Nunc
-                consequat nunc ut velit ultricies, ac vehicula mi fringilla.
-                Morbi vehicula dolor turpis. Cras eget nisi et velit posuere
-                tincidunt cursus eu mi.
-              </p>
+
+                La calidad de los productos agrícolas es esencial para la satisfacción del consumidor y su salud. El cultivo adecuado influye en aspectos como el sabor, la textura, el valor nutricional y la seguridad alimentaria de los alimentos. Por ejemplo, la cosecha en el momento óptimo de madurez y el manejo adecuado durante la postcosecha pueden realzar el sabor y la frescura de los productos, mientras que el uso responsable de fertilizantes y prácticas orgánicas puede aumentar su valor nutricional </p>
               <a href="#" class="btn btn-primary">Mas informacion</a>
             </div>
           </div>
@@ -186,7 +157,7 @@
 
 
 
-  
+
 
   <section class="services section-padding">
     <div class="container">
@@ -205,16 +176,11 @@
               <i class="bi bi-laptop"></i>
               <h3 class="card-title">Registrate</h3>
               <p class="lead">
-                maximus enim, vel interdum dolor felis rhoncus lectus.
-                Pellentesque mattis mi magna, a convallis ex placerat id.
-                Nulla luctus lorem non augue laoreet tincidunt. Cras eget
-                mollis turpis, sit amet egestas dui. Nunc consequat nunc ut
-                velit ultricies, ac vehicula mi fringilla. Morbi vehicula
-                dolor turpis. Cras eget nisi et velit posuere tincidunt cursus
-                eu mi
+                Puedes usar algunas funciones de nuestra pagina web pero si quieres utilizar las demás funciones solo tendrás que regístrate llenando un simple formulario dando click en el botón de aquí abajo, o si ya tienes una cuenta simplemente inicia session.
+
               </p>
               <button class="btn bg-primary text-white">
-                <a href="inicarSe.html" class="text-white text-decoration-none">Mas informacion</a>
+                <a href="crearCuen.php" class="text-white text-decoration-none">Regístrate</a>
               </button>
             </div>
           </div>
@@ -225,13 +191,9 @@
               <i class="bi bi-people-fill"></i>
               <h3 class="card-title">Nosotros</h3>
               <p class="lead">
-                maximus enim, vel interdum dolor felis rhoncus lectus.
-                Pellentesque mattis mi magna, a convallis ex placerat id.
-                Nulla luctus lorem non augue laoreet tincidunt. Cras eget
-                mollis turpis, sit amet egestas dui. Nunc consequat nunc ut
-                velit ultricies, ac vehicula mi fringilla. Morbi vehicula
-                dolor turpis. Cras eget nisi et velit posuere tincidunt cursus
-                eu mi
+                Somos Search For Agro tu recurso principal para el cuidado de cultivos en la región de Cúcuta,
+                Norte de Santander. Nos dedicamos a proporcionar a los agricultores locales las herramientas,
+                conocimientos y consejos necesarios para optimizar el rendimiento de sus cultivos, enfrentar desafíos climáticos y promover prácticas sostenibles.
               </p>
               <button class="btn bg-primary text-white">
                 Mas informacion
@@ -243,15 +205,9 @@
           <div class="card text-center bg-light pb-2">
             <div class="card-body">
               <i class="bi bi-chat-square-text"></i>
-              <h3 class="card-title">Contactanos</h3>
+              <h3 class="card-title">Progreso</h3>
               <p class="lead">
-                maximus enim, vel interdum dolor felis rhoncus lectus.
-                Pellentesque mattis mi magna, a convallis ex placerat id.
-                Nulla luctus lorem non augue laoreet tincidunt. Cras eget
-                mollis turpis, sit amet egestas dui. Nunc consequat nunc ut
-                velit ultricies, ac vehicula mi fringilla. Morbi vehicula
-                dolor turpis. Cras eget nisi et velit posuere tincidunt cursus
-                eu mi
+                Con nosotros podrás agregar tus cultivos y ver un aproximado de cuando estarán listos para cosechar (el tiempo puede variar), recuerda que para acceder a esta sección tendrás que haberte registrado o iniciado sección con tu cuenta para guardar tus avances.
               </p>
               <button class="btn bg-primary text-white">
                 <a href="contacto.html" class="text-white text-decoration-none">Mas informacion</a>
@@ -269,15 +225,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="mt-5 section-header bg-dark text-white text-center p-5 rounded mb-5" >
+          <div class="mt-5 section-header bg-dark text-white text-center p-5 rounded mb-5">
             <h2>Cultivos</h2>
             <p>
-              maximus enim, vel interdum dolor felis rhoncus lectus.
-              Pellentesque mattis mi magna, a convallis ex placerat id. Nulla
-              luctus lorem non augue laoreet tincidunt. Cras eget mollis
-              turpis, sit amet egestas dui. Nunc consequat nunc ut velit
-              ultricies, ac vehicula mi fringilla. Morbi vehicula dolor
-              turpis. Cras eget nisi et velit posuere tincidunt cursus eu mi
+
+              Los cultivos agrícolas son la base fundamental de la agricultura y juegan un papel crucial en la alimentación, economía y sostenibilidad ambiental a nivel global. Desde los cereales que constituyen la base de la dieta humana hasta las frutas y hortalizas que añaden diversidad y nutrientes esenciales a nuestra alimentación, los cultivos son la columna vertebral de la seguridad alimentaria y la salud pública.
             </p>
           </div>
         </div>
@@ -287,17 +239,11 @@
           <div class="card text-center bg-light pb-2">
             <div class="card-body">
               <div class="img-arena mb-4">
-                <img src="img/maiz.jpg" class="img-fluid" alt="" />
+                <img src="CSS/IMG/tomate-cultivos.jpg" class="img-fluid" alt="" />
               </div>
-              <h3>Maiz</h3>
+              <h3>Tomates</h3>
               <p class="lead">
-                maximus enim, vel interdum dolor felis rhoncus lectus.
-                Pellentesque mattis mi magna, a convallis ex placerat id.
-                Nulla luctus lorem non augue laoreet tincidunt. Cras eget
-                mollis turpis, sit amet egestas dui. Nunc consequat nunc ut
-                velit ultricies, ac vehicula mi fringilla. Morbi vehicula
-                dolor turpis. Cras eget nisi et velit posuere tincidunt cursus
-                eu mi
+                Los tomates prefieren suelos bien drenados y fértiles con un pH entre 6.0 y 6.8. Necesitan pleno sol y temperaturas cálidas para crecer adecuadamente.
               </p>
               <button class="btn bg-primary text-white">
                 Mas informacion
@@ -309,18 +255,11 @@
           <div class="card text-center bg-light pb-2">
             <div class="card-body">
               <div class="img-arena mb-4">
-                <img src="img/maiz.jpg" class="img-fluid" alt="" />
+                <img src="CSS/IMG/papas-cultivo.jpg" class="mb-4 img-fluid" alt="" />
               </div>
-              <h3>Maiz</h3>
+              <h3>Papa</h3>
               <p class="lead">
-                maximus enim, vel interdum dolor felis rhoncus lectus.
-                Pellentesque mattis mi magna, a convallis ex placerat id.
-                Nulla luctus lorem non augue laoreet tincidunt. Cras eget
-                mollis turpis, sit amet egestas dui. Nunc consequat nunc ut
-                velit ultricies, ac vehicula mi fringilla. Morbi vehicula
-                dolor turpis. Cras eget nisi et velit posuere tincidunt cursus
-                eu mi
-              </p>
+                La cosecha de las papas generalmente ocurre de 90 a 120 días después de la siembra, dependiendo de la variedad y las condiciones de crecimiento. </p>
               <button class="btn bg-primary text-white">
                 Mas informacion
               </button>
@@ -331,18 +270,11 @@
           <div class="card text-center bg-light pb-2">
             <div class="card-body">
               <div class="img-arena mb-4">
-                <img src="img/maiz.jpg" class="img-fluid" alt="" />
+                <img src="CSS/IMG/arroz-cultivos.jpg" class="img-fluid" alt="" />
               </div>
-              <h3>Maiz</h3>
+              <h3>Arroz</h3>
               <p class="lead">
-                maximus enim, vel interdum dolor felis rhoncus lectus.
-                Pellentesque mattis mi magna, a convallis ex placerat id.
-                Nulla luctus lorem non augue laoreet tincidunt. Cras eget
-                mollis turpis, sit amet egestas dui. Nunc consequat nunc ut
-                velit ultricies, ac vehicula mi fringilla. Morbi vehicula
-                dolor turpis. Cras eget nisi et velit posuere tincidunt cursus
-                eu mi
-              </p>
+                El arroz se cultiva en campos inundados o en suelos saturados de agua. Se siembra en primavera en áreas más frías y en verano en áreas más cálidas. </p>
               <button class="btn bg-primary text-white">
                 Mas informacion
               </button>
@@ -360,12 +292,8 @@
           <div class="mt-5 section-header bg-dark text-white text-center p-5 rounded mb-5">
             <h2>Plagas</h2>
             <p>
-              maximus enim, vel interdum dolor felis rhoncus lectus.
-              Pellentesque mattis mi magna, a convallis ex placerat id. Nulla
-              luctus lorem non augue laoreet tincidunt. Cras eget mollis
-              turpis, sit amet egestas dui. Nunc consequat nunc ut velit
-              ultricies, ac vehicula mi fringilla. Morbi vehicula dolor
-              turpis. Cras eget nisi et velit posuere tincidunt cursus eu mi
+
+              La presencia de plagas en los cultivos representa uno de los desafíos más significativos para los agricultores en todo el mundo. Estas plagas, que pueden incluir insectos, enfermedades y malezas, tienen el potencial de causar daños severos a los cultivos, reduciendo rendimientos y calidad, e incluso provocando pérdidas económicas significativas
             </p>
           </div>
         </div>
@@ -375,17 +303,12 @@
           <div class="card text-center bg-light pb-2">
             <div class="card-body ">
               <div class="img-arena mb-4">
-                <img src="img/maiz.jpg" class="img-fluid" alt="" />
+                <img src="CSS/IMG/pulgones-plaga.jpg" class="img-fluid" alt="" />
               </div>
-              <h3>Maiz</h3>
+              <h3>Insectos Herbívoros</h3>
               <p class="lead">
-                maximus enim, vel interdum dolor felis rhoncus lectus.
-                Pellentesque mattis mi magna, a convallis ex placerat id.
-                Nulla luctus lorem non augue laoreet tincidunt. Cras eget
-                mollis turpis, sit amet egestas dui. Nunc consequat nunc ut
-                velit ultricies, ac vehicula mi fringilla. Morbi vehicula
-                dolor turpis. Cras eget nisi et velit posuere tincidunt cursus
-                eu mi
+                Estos pequeños insectos chupadores de savia se alimentan de una amplia variedad de plantas cultivadas, incluyendo tomates, papas, cereales y frutas. Pueden debilitar las plantas al extraer nutrientes y transmitir enfermedades virales.
+
               </p>
               <button class="btn bg-primary text-white">
                 Mas informacion
@@ -397,18 +320,11 @@
           <div class="card text-center bg-light pb-2">
             <div class="card-body">
               <div class="img-arena mb-4">
-                <img src="img/maiz.jpg" class="img-fluid" alt="" />
+                <img src="CSS/IMG/hongos-plagas.jpg" class="img-fluid" alt="" />
               </div>
-              <h3>Maiz</h3>
+              <h3>Enfermedades fúngicas</h3>
               <p class="lead">
-                maximus enim, vel interdum dolor felis rhoncus lectus.
-                Pellentesque mattis mi magna, a convallis ex placerat id.
-                Nulla luctus lorem non augue laoreet tincidunt. Cras eget
-                mollis turpis, sit amet egestas dui. Nunc consequat nunc ut
-                velit ultricies, ac vehicula mi fringilla. Morbi vehicula
-                dolor turpis. Cras eget nisi et velit posuere tincidunt cursus
-                eu mi
-              </p>
+                Los hongos patógenos pueden infectar los cultivos y causar enfermedades como mildiú polvoriento, oídio, roya, tizón tardío y manchas foliares. Estas enfermedades pueden provocar marchitez, pudrición, manchas en las hojas y frutos </p>
               <button class="btn bg-primary text-white">
                 Mas informacion
               </button>
@@ -419,17 +335,11 @@
           <div class="card text-center bg-light pb-2">
             <div class="card-body">
               <div class="img-arena mb-4">
-                <img src="img/maiz.jpg" class="img-fluid" alt="" />
+                <img src="CSS/IMG/maleza.plagas.jpg" class="img-fluid" alt="" />
               </div>
-              <h3>Maiz</h3>
+              <h3>Maleza</h3>
               <p class="lead">
-                maximus enim, vel interdum dolor felis rhoncus lectus.
-                Pellentesque mattis mi magna, a convallis ex placerat id.
-                Nulla luctus lorem non augue laoreet tincidunt. Cras eget
-                mollis turpis, sit amet egestas dui. Nunc consequat nunc ut
-                velit ultricies, ac vehicula mi fringilla. Morbi vehicula
-                dolor turpis. Cras eget nisi et velit posuere tincidunt cursus
-                eu mi
+                Las plantas no deseadas que compiten por nutrientes, agua y luz solar con los cultivos se conocen como malezas. Pueden reducir los rendimientos de los cultivos y dificultar las labores de manejo y cosecha.
               </p>
               <button class="btn bg-primary text-white">
                 Mas informacion
@@ -442,8 +352,10 @@
   </section>
 
   <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">&copy; Search For Agro 2024</p></div>
-        </footer>
+    <div class="container">
+      <p class="m-0 text-center text-white">&copy; Search For Agro 2024</p>
+    </div>
+  </footer>
 
   <script>
     const body = document.body;
