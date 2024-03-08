@@ -1,4 +1,73 @@
-<?php
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iniciar session</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/inicioSe.css">
+  <link rel="icon" type="image/png" href="CSS/IMG/favi.png">
+  <style>
+    body{
+      border: none;
+      background-image: url(CSS/IMG/fertilizacion-de-fondo.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+    
+</head>
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+
+
+
+
+      <a href="#" class="navbar-brand"><span class="text-primary">Search</span> For Agro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS" aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarS">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="index.php" class="nav-link">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="historial.php" class="nav-link">Progreso</a>
+          </li>
+          <li class="nav-item">
+            <a href="cultivos.php" class="nav-link">Cultivos</a>
+          </li>          
+          <li class="nav-item">
+            <a href="nosotros.php" class="nav-link">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a href="iniciarSe.php" class="nav-link">iniciar sesión</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <div class="h-auto form-container">
+    <p class="title">Registrate</p>
+
+    <form class="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    <?php
 
 $conexion = new mysqli("localhost:3308", "root", "", "search_with_agro");
 
@@ -35,62 +104,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $conexion->close();
 ?>
 
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iniciar session</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/inicioSe.css">
-  <link rel="icon" type="image/png" href="CSS/IMG/favi.png">
-  <style>
-    body{
-      border: none;
-    }
-  </style>
-    
-</head>
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a href="#" class="navbar-brand"><span class="text-primary">Search</span> For Agro</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS" aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarS">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a href="index.php" class="nav-link">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a href="iniciarSe.php" class="nav-link">Iniciar session</a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
-
-<body>
-  <div class="h-auto form-container">
-    <p class="title">Registrate</p>
-
-    <form class="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-
     
       <input type="text" class="input" placeholder="Nombre de Usuario" name="usuario" required>
 
-      <input type="password" class="input" placeholder="Correo Electrónico" name="numero" required>
+      <input type="email" class="input" placeholder="Correo Electrónico" name="numero" required>
  
       <input type="password" class="input" placeholder="Contraseña"  name="cedula" required>
 

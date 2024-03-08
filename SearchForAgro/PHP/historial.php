@@ -42,45 +42,37 @@ if (!isset($_SESSION['usuario'])) {
         <!-- Responsive navbar-->
        
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">   
-       
-        
-        
+        <div class="container">
 
-        <a href="#" class="navbar-brand"
-          ><span class="text-primary">Search</span> For Agro</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarS"
-          aria-controls="navbarS"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarS">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a href="index.php" class="nav-link">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a href="historial.php" class="nav-link">Progreso</a>
-              </li>
-            <li class="nav-item">
-              <a href="cultivos.php" class="nav-link">Cultivos</a>
-            </li>
-            <li class="nav-item">
-              <a href="index.php" class="nav-link">cerrar session</a>
-            </li>
-          </ul>
+
+
+            <a href="#" class="navbar-brand"><span class="text-primary">Search</span> For Agro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS" aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarS">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.php" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="historial.php" class="nav-link">Progreso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cultivos.php" class="nav-link">Cultivos</a>
+                    </li>
+                    <li class="nav-item">
+            <a href="nosotros.php" class="nav-link">Nosotros</a>
+          </li>
+                    <li class="nav-item">
+                        <a href="index.php" class="nav-link">cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-
 
     
     <div class="cont mt-5 ">

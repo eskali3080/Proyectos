@@ -58,7 +58,7 @@
             <a href="cultivos.php" class="nav-link">Cultivos</a>
           </li>
           <li class="nav-item">
-            <a href="index.php" class="nav-link">Cerrar session</a>
+            <a href="index.php" class="nav-link">Cerrar sesión</a>
           </li>
         </ul>
       </div>

@@ -54,7 +54,10 @@
                         <a href="cultivos.php" class="nav-link">Cultivos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="iniciarSe.php" class="nav-link">iniciar session</a>
+            <a href="nosotros.php" class="nav-link">Nosotros</a>
+          </li>
+                    <li class="nav-item">
+                        <a href="iniciarSe.php" class="nav-link">iniciar sesión</a>
                     </li>
                 </ul>
             </div>

@@ -1,39 +1,3 @@
-<?php
-$conexion = new mysqli("localhost:3308", "root", "", "search_with_agro");
-
-if ($conexion->connect_error) {
-    die("Error de conexión a la base de datos: " . $conexion->connect_error);
-}
-
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $usuario = $_POST["usuario"];
-    $cedula = $_POST["cedula"];
-
-
-    $stmt = $conexion->prepare("SELECT id FROM usuarios WHERE usuario = ? AND cedula = ?");
-    $stmt->bind_param("ss", $usuario, $cedula);
-    $stmt->execute();
-    $stmt->store_result();
-
-
-if ($stmt->num_rows > 0) {
-
-    session_start();
-    $_SESSION['usuario'] = $usuario;
-    header("Location: index2.php");
-    exit();
-} else {
-    echo "Usuario o contraseña incorrecta.";
-}
-
-    $stmt->close();
-}
-
-$conexion->close();
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,14 +11,21 @@ $conexion->close();
   <link rel="stylesheet" href="CSS/inicioSe.css">
   <link rel="icon" type="image/png" href="CSS/IMG/favi.png">
   <style>
-    body{
+    body {
       border: none;
+      background-image: url(CSS/IMG/fertilizacion-de-fondo.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   </style>
 </head>
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
+
+
+
+
       <a href="#" class="navbar-brand"><span class="text-primary">Search</span> For Agro</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS" aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -64,6 +35,15 @@ $conexion->close();
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a href="index.php" class="nav-link">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="historial.php" class="nav-link">Progreso</a>
+          </li>
+          <li class="nav-item">
+            <a href="cultivos.php" class="nav-link">Cultivos</a>
+          </li>
+          <li class="nav-item">
+            <a href="nosotros.php" class="nav-link">Nosotros</a>
           </li>
           <li class="nav-item">
             <a href="crearCuen.php" class="nav-link">Registrarse</a>
@@ -79,21 +59,55 @@ $conexion->close();
   <div class="h-auto form-container">
     <p class="title">Bienvenido</p>
     <form class="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+      <?php
+      $conexion = new mysqli("localhost:3308", "root", "", "search_with_agro");
+
+      if ($conexion->connect_error) {
+        die("Error de conexión a la base de datos: " . $conexion->connect_error);
+      }
+
+
+      if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $usuario = $_POST["usuario"];
+        $cedula = $_POST["cedula"];
+
+
+        $stmt = $conexion->prepare("SELECT id FROM usuarios WHERE usuario = ? AND cedula = ?");
+        $stmt->bind_param("ss", $usuario, $cedula);
+        $stmt->execute();
+        $stmt->store_result();
+
+
+        if ($stmt->num_rows > 0) {
+
+          session_start();
+          $_SESSION['usuario'] = $usuario;
+          header("Location: index2.php");
+          exit();
+        } else {
+          echo "Usuario o contraseña incorrecta.";
+        }
+
+        $stmt->close();
+      }
+
+      $conexion->close();
+      ?>
 
       <input type="text" class="input" placeholder="Nombre de Usuario" name="usuario" required>
-      <input type="password" class="input" placeholder="Contraseña"  name="cedula" required>
+      <input type="password" class="input" placeholder="Contraseña" name="cedula" required>
 
       <p class="page-link">
         <span class="page-link-label">Olvide la contraseña</span>
       </p>
- 
+
       <input class="text-decoration-none ini text-center form-btn" type="submit" value="Iniciar Sesión">
     </form>
 
 
     <p class="mt-5 sign-up-label">
-        ¿No tienes una cuenta? <a href="crearCuen.php">Registrarse</a>
-      </p>
+      ¿No tienes una cuenta? <a href="crearCuen.php">Registrarse</a>
+    </p>
     <div class="mb-5 buttons-container">
       <div class="google-login-button">
         <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" x="0px" y="0px" class="google-icon" viewBox="0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
